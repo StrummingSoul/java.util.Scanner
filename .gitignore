@@ -1,0 +1,11 @@
+   int gcd = calculateGCD(number1, number2);
+        System.out.println("Наибольший общий делитель: " + gcd);
+    }
+
+    public static int calculateGCD(int number1, int number2) {
+        if (number2 == 0) {
+            return number1;
+        }
+        return calculateGCD(number2, number1 % number2);
+    }
+}
